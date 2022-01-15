@@ -1,0 +1,42 @@
+version: 2
+
+models:
+    - name: Base
+      description: "Base table with minimal data type changes, Data lake structure"
+
+    - name: tblAnalysisAggrigatedIsland
+      description: "this table represents Island aggigated data"
+
+    - name: tblAnalysisTrend
+      description: "This table represents probable future stats with past data as reference"
+
+    - name: GeoDemographic
+      description: "Geo Demographic table which consists of location and demographic data per region"
+      columns:
+          - name: Location_ISO_Code
+          - name: Location
+          - name: Location_Level
+          - name: Province
+          - name: Country
+          - name: Continent
+          - name: Island
+          - name: Time_Zone
+          - name: Special_Status
+          - name: Total_Regencies
+          - name: Total_Cities
+          - name: Total_Urban_Villages
+          - name: Total_Rural_Villages
+          - name: AREA_KM_2_
+          - name: POPULATION
+          - name: Population_Density
+          - name: Longitude
+          - name: Latitude
+          - name: Coordinates
+
+    - name: tblGeoDemographic
+    - name: tblGrowthFactors
+    - name: tblRates
+    - name: tblStatsNew
+    - name: tblStatsPerMillion
+    - name: tblStatsTotal
+
